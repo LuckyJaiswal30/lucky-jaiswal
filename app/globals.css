@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter);
+}
+
+:root {
+  color-scheme: light;
+  --background: #f5f5f4;
+  --foreground: #111827;
+  --capsule-bg: #000000;
+  --capsule-fg: #ffffff;
+  --muted: #4b5563;
+  --muted-soft: #6b7280;
+  --border: rgba(17, 24, 39, 0.12);
+  --surface: rgba(255, 255, 255, 0.72);
+  --surface-strong: rgba(255, 255, 255, 0.92);
+  --glow: rgba(15, 23, 42, 0.08);
+  --glow-accent: rgba(8, 145, 178, 0.08);
+  --glow-overlay: rgba(15, 23, 42, 0.09);
+}
+
+.dark {
+  color-scheme: dark;
+  --background: #0a0a0a;
+  --foreground: #fafafa;
+  --capsule-bg: #ffffff;
+  --capsule-fg: #000000;
+  --muted: #a3a3a3;
+  --muted-soft: #737373;
+  --border: rgba(255, 255, 255, 0.12);
+  --surface: rgba(255, 255, 255, 0.04);
+  --surface-strong: rgba(255, 255, 255, 0.08);
+  --glow: rgba(255, 255, 255, 0.08);
+  --glow-accent: rgba(103, 232, 249, 0.08);
+  --glow-overlay: rgba(255, 255, 255, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+}
