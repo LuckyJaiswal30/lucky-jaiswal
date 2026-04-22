@@ -1,12 +1,14 @@
 {
-  "name": "floating-portfolio",
+  "name": "lucky-jaiswal",
   "version": "0.1.0",
+  "description": "Personal portfolio of Lucky Jaiswal, focused on modern frontend development, performance, and clean UI.",
+  "author": "Lucky Jaiswal",
   "private": true,
   "scripts": {
-    "dev": "node node_modules/next/dist/bin/next dev",
-    "build": "node node_modules/next/dist/bin/next build",
-    "start": "node node_modules/next/dist/bin/next start",
-    "lint": "node node_modules/eslint/bin/eslint.js ."
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "lenis": "^1.3.23",
